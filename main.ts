@@ -14,13 +14,6 @@ radio.onReceivedString(function (receivedString) {
         READY = 1
     }
 })
-input.onGesture(Gesture.Shake, function () {
-    basic.clearScreen()
-    music.play(music.createSoundExpression(WaveShape.Square, 5000, 5000, 255, 255, 9354, SoundExpressionEffect.None, InterpolationCurve.Logarithmic), music.PlaybackMode.InBackground)
-    basic.showString("GET OUT!")
-    basic.clearScreen()
-    basic.showString("" + (text_list[NUMBER]))
-})
 function main_script () {
     if (NUMBER > 27) {
         NUMBER = 1
